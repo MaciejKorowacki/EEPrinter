@@ -1,0 +1,15 @@
+C:\Users\Maciej\main\EEPrintViewer\obj\Debug\net9.0-windows\EEPrintViewer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maciej\main\EEPrintViewer\obj\Debug\net9.0-windows\EEPrintViewer.AssemblyInfoInputs.cache
+C:\Users\Maciej\main\EEPrintViewer\obj\Debug\net9.0-windows\EEPrintViewer.AssemblyInfo.cs
+C:\Users\Maciej\main\EEPrintViewer\obj\Debug\net9.0-windows\EEPrintViewer.csproj.CoreCompileInputs.cache
+C:\Users\Maciej\main\EEPrintViewer\obj\Debug\net9.0-windows\EEPrintViewer.sourcelink.json
+C:\Users\Maciej\main\EEPrintViewer\bin\Debug\net9.0-windows\EEPrintViewer.exe
+C:\Users\Maciej\main\EEPrintViewer\bin\Debug\net9.0-windows\EEPrintViewer.deps.json
+C:\Users\Maciej\main\EEPrintViewer\bin\Debug\net9.0-windows\EEPrintViewer.runtimeconfig.json
+C:\Users\Maciej\main\EEPrintViewer\bin\Debug\net9.0-windows\EEPrintViewer.dll
+C:\Users\Maciej\main\EEPrintViewer\bin\Debug\net9.0-windows\EEPrintViewer.pdb
+C:\Users\Maciej\main\EEPrintViewer\obj\Debug\net9.0-windows\EEPrintViewer.dll
+C:\Users\Maciej\main\EEPrintViewer\obj\Debug\net9.0-windows\refint\EEPrintViewer.dll
+C:\Users\Maciej\main\EEPrintViewer\obj\Debug\net9.0-windows\EEPrintViewer.pdb
+C:\Users\Maciej\main\EEPrintViewer\obj\Debug\net9.0-windows\EEPrintViewer.genruntimeconfig.cache
+C:\Users\Maciej\main\EEPrintViewer\obj\Debug\net9.0-windows\ref\EEPrintViewer.dll

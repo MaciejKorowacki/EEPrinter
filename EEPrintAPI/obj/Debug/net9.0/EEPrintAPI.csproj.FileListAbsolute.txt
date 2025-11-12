@@ -1,0 +1,12 @@
+C:\Users\Maciej\main\EEPrintAPI\bin\Debug\net9.0\EEPrintAPI.deps.json
+C:\Users\Maciej\main\EEPrintAPI\bin\Debug\net9.0\EEPrintAPI.dll
+C:\Users\Maciej\main\EEPrintAPI\bin\Debug\net9.0\EEPrintAPI.pdb
+C:\Users\Maciej\main\EEPrintAPI\obj\Debug\net9.0\EEPrintAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maciej\main\EEPrintAPI\obj\Debug\net9.0\EEPrintAPI.AssemblyInfoInputs.cache
+C:\Users\Maciej\main\EEPrintAPI\obj\Debug\net9.0\EEPrintAPI.AssemblyInfo.cs
+C:\Users\Maciej\main\EEPrintAPI\obj\Debug\net9.0\EEPrintAPI.csproj.CoreCompileInputs.cache
+C:\Users\Maciej\main\EEPrintAPI\obj\Debug\net9.0\EEPrintAPI.sourcelink.json
+C:\Users\Maciej\main\EEPrintAPI\obj\Debug\net9.0\EEPrintAPI.dll
+C:\Users\Maciej\main\EEPrintAPI\obj\Debug\net9.0\refint\EEPrintAPI.dll
+C:\Users\Maciej\main\EEPrintAPI\obj\Debug\net9.0\EEPrintAPI.pdb
+C:\Users\Maciej\main\EEPrintAPI\obj\Debug\net9.0\ref\EEPrintAPI.dll

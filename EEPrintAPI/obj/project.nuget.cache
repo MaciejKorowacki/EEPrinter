@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ee5NHsDSx/Y=",
+  "dgSpecHash": "bW0e4QPKglQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\Maciej\\main\\EEPrintAPI\\EEPrintAPI.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Maciej\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.119\\stub.system.data.sqlite.core.netstandard.1.0.119.nupkg.sha512",
+    "C:\\Users\\Maciej\\.nuget\\packages\\system.data.sqlite.core\\1.0.119\\system.data.sqlite.core.1.0.119.nupkg.sha512"
+  ],
   "logs": []
 }
