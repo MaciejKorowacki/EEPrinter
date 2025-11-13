@@ -76,7 +76,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numCopies)).BeginInit();
             this.SuspendLayout();
 
-            // MenuStrip
+            // --- MenuStrip ---
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
                 this.fileMenu, this.toolsMenu, this.helpMenu});
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -99,12 +99,12 @@
             this.aboutMenuItem.Text = "About";
             this.aboutMenuItem.Click += new System.EventHandler(this.About_Click);
 
-            // SplitContainer
+            // --- SplitContainer ---
             this.splitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.splitContainer.SplitterDistance = 600;
+            this.splitContainer.SplitterDistance = 700;
 
-            // Panel1 - DataGridView
+            // --- Panel1: grid ---
             this.gridJobs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridJobs.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridJobs.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -120,75 +120,86 @@
             this.gridJobs.Columns.Add(new System.Windows.Forms.DataGridViewTextBoxColumn { HeaderText = "Added Date", DataPropertyName = "CreatedAt" });
             this.splitContainer.Panel1.Controls.Add(this.gridJobs);
 
-            // Panel2 – prawy panel (preview + pola)
+            // --- Panel2 (prawy) ---
             int top = 10;
             int labelWidth = 120;
-            int offsetX = 5;
+            int offsetX = 10;
 
-            this.previewBox.Size = new System.Drawing.Size(300, 200);
+            // Preview
             this.previewBox.Location = new System.Drawing.Point(10, top);
+            this.previewBox.Size = new System.Drawing.Size(300, 200);
             this.previewBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.previewBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.splitContainer.Panel2.Controls.Add(this.previewBox);
+            top += 210;
 
             // Original File
             this.lblOriginalFile.Text = "Original File:";
             this.lblOriginalFile.Location = new System.Drawing.Point(10, top);
             this.lblOriginalFile.Width = labelWidth;
             this.splitContainer.Panel2.Controls.Add(this.lblOriginalFile);
+
             this.txtOriginalFile.Location = new System.Drawing.Point(10 + labelWidth + offsetX, top);
             this.txtOriginalFile.Width = 200;
             this.splitContainer.Panel2.Controls.Add(this.txtOriginalFile);
+            top += 30;
 
             // Layout Width
             this.lblLayoutWidth.Text = "Layout Width:";
             this.lblLayoutWidth.Location = new System.Drawing.Point(10, top);
             this.lblLayoutWidth.Width = labelWidth;
             this.splitContainer.Panel2.Controls.Add(this.lblLayoutWidth);
+
             this.txtLayoutWidth.Location = new System.Drawing.Point(10 + labelWidth + offsetX, top);
             this.txtLayoutWidth.Width = 100;
             this.splitContainer.Panel2.Controls.Add(this.txtLayoutWidth);
+            top += 30;
 
             // Layout Height
             this.lblLayoutHeight.Text = "Layout Height:";
             this.lblLayoutHeight.Location = new System.Drawing.Point(10, top);
             this.lblLayoutHeight.Width = labelWidth;
             this.splitContainer.Panel2.Controls.Add(this.lblLayoutHeight);
+
             this.txtLayoutHeight.Location = new System.Drawing.Point(10 + labelWidth + offsetX, top);
             this.txtLayoutHeight.Width = 100;
             this.splitContainer.Panel2.Controls.Add(this.txtLayoutHeight);
+            top += 30;
 
             // Copies
             this.lblCopies.Text = "Copies:";
             this.lblCopies.Location = new System.Drawing.Point(10, top);
             this.lblCopies.Width = labelWidth;
             this.splitContainer.Panel2.Controls.Add(this.lblCopies);
+
             this.numCopies.Location = new System.Drawing.Point(10 + labelWidth + offsetX, top);
             this.numCopies.Width = 60;
             this.splitContainer.Panel2.Controls.Add(this.numCopies);
-
+            top += 30;
 
             // Comment
             this.lblComment.Text = "Comment:";
             this.lblComment.Location = new System.Drawing.Point(10, top);
             this.lblComment.Width = labelWidth;
             this.splitContainer.Panel2.Controls.Add(this.lblComment);
+
             this.txtComment.Location = new System.Drawing.Point(10 + labelWidth + offsetX, top);
             this.txtComment.Width = 200;
             this.txtComment.Height = 60;
             this.txtComment.Multiline = true;
             this.splitContainer.Panel2.Controls.Add(this.txtComment);
-
+            top += 70;
 
             // Step & Repeat
             this.lblStepRepeat.Text = "Step & Repeat:";
             this.lblStepRepeat.Location = new System.Drawing.Point(10, top);
             this.lblStepRepeat.Width = labelWidth;
             this.splitContainer.Panel2.Controls.Add(this.lblStepRepeat);
-            this.chkStepRepeat.Location = new System.Drawing.Point(10 + labelWidth + offsetX, top);
+
+            this.chkStepRepeat.Location = new System.Drawing.Point(10 + labelWidth + offsetX, top + 3);
             this.splitContainer.Panel2.Controls.Add(this.chkStepRepeat);
 
-            // Form1
+            // --- Form ---
             this.ClientSize = new System.Drawing.Size(1200, 700);
             this.Controls.Add(this.splitContainer);
             this.Controls.Add(this.menuStrip1);
