@@ -1,4 +1,6 @@
 /EEPrintAPI/bin
 /EEPrintAPI/obj
+/EEPrintAPI/.vs
 /EEPrintViewer/obj
 /EEPrintViewer/.vs
+/EEPrintViewer/bin
