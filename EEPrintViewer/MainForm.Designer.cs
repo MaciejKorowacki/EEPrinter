@@ -131,7 +131,7 @@
             this.previewBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.previewBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.splitContainer.Panel2.Controls.Add(this.previewBox);
-            top += 210;
+            //top += 210;
 
             // Original File
             this.lblOriginalFile.Text = "Original File:";

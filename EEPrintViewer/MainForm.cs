@@ -21,17 +21,20 @@ namespace EPrintViewer
         {
             try
             {
-                string dbPath = @"C:\Users\Maciej\Desktop\dummy.db";
+                string dbPath = @"C:\Users\Maciej\Desktop\Data.db";
                 IEEPrintAPI api = new EEPrintAPI(dbPath);
-                jobs = api.GetJobs(DateTime.Now.AddDays(-7), DateTime.Now);
 
-                if (jobs == null || jobs.Count == 0)
-                    LoadDummyJobs(); // fallback jeœli API nic nie zwróci
+                // Get all jobs from API; ignore CreatedAt filtering since DB has no date
+                jobs = api.GetJobs(DateTime.MinValue, DateTime.MaxValue);
             }
             catch
             {
-                LoadDummyJobs(); // fallback jeœli API siê nie po³¹czy
+                jobs = new List<Job>(); // fallback in case API fails completely
             }
+
+            // Only load dummy jobs if API returned nothing
+            if (jobs == null || jobs.Count == 0)
+                LoadDummyJobs();
 
             gridJobs.DataSource = jobs;
         }
@@ -40,9 +43,9 @@ namespace EPrintViewer
         {
             jobs = new List<Job>
             {
-                new Job { Name="Job 1", OriginalFileName="file1.pdf", IsHold=true, Comment="Test comment 1", LayoutWidth=100, LayoutHeight=200, Copies=2, StepRepeatEnabled=true, CreatedAt=DateTime.Now },
-                new Job { Name="Job 2", OriginalFileName="file2.pdf", IsHold=false, Comment="Test comment 2", LayoutWidth=150, LayoutHeight=250, Copies=1, StepRepeatEnabled=false, CreatedAt=DateTime.Now.AddMinutes(-30) },
-                new Job { Name="Job 3", OriginalFileName="file3.pdf", IsHold=true, Comment="Test comment 3", LayoutWidth=200, LayoutHeight=300, Copies=5, StepRepeatEnabled=true, CreatedAt=DateTime.Now.AddHours(-1) }
+                new Job { JobID = 1, Name="Job 1", OriginalFileName="file1.pdf", IsHold=true, Comment="Test comment 1", LayoutWidth=100, LayoutHeight=200, Copies=2, StepRepeatEnabled=true, CreatedAt=DateTime.Now },
+                new Job { JobID = 2, Name="Job 2", OriginalFileName="file2.pdf", IsHold=false, Comment="Test comment 2", LayoutWidth=150, LayoutHeight=250, Copies=1, StepRepeatEnabled=false, CreatedAt=DateTime.Now.AddMinutes(-30) },
+                new Job { JobID = 3, Name="Job 3", OriginalFileName="file3.pdf", IsHold=true, Comment="Test comment 3", LayoutWidth=200, LayoutHeight=300, Copies=5, StepRepeatEnabled=true, CreatedAt=DateTime.Now.AddHours(-1) }
             };
         }
 
