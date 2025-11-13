@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace EEPrintAPI
+namespace EPrintAPI
 {
     public interface IEEPrintAPI
     {

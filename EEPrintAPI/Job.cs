@@ -1,7 +1,10 @@
 using System;
 
-namespace EEPrintAPI
+namespace EPrintAPI
 {
+    /// <summary>
+    /// Single Job container class
+    /// </summary>
     public class Job
     {
         public long JobID { get; set; }
@@ -13,5 +16,6 @@ namespace EEPrintAPI
         public int LayoutHeight { get; set; }
         public int Copies { get; set; }
         public DateTime CreatedAt { get; set; }
+        public bool StepRepeatEnabled { get; set; }
     }
 }

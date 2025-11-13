@@ -1,15 +1,15 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using EEPrintAPI;
+using EPrintAPI;
 
-namespace EEPrintViewer
+namespace EPrintViewer
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         private List<Job> jobs;
 
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized; // fullscreen
@@ -67,19 +67,4 @@ namespace EEPrintViewer
             MessageBox.Show("EEPrintViewer sample GUI\nDummy jobs example", "About");
         }
     }
-
-    public class Job
-    {
-        public string Name { get; set; } = "";
-        public string OriginalFileName { get; set; } = "";
-        public bool IsHold { get; set; }
-        public string Comment { get; set; } = "";
-        public string Comment { get; set; } = "";
-        public int LayoutWidth { get; set; }
-        public int LayoutHeight { get; set; }
-        public int Copies { get; set; }
-        public bool StepRepeatEnabled { get; set; }
-        public DateTime CreatedAt { get; set; }
-    }
-
 }

@@ -1,6 +1,6 @@
-﻿namespace EEPrintViewer
+﻿namespace EPrintViewer
 {
-    partial class Form1
+    partial class MainForm
     {
         private System.ComponentModel.IContainer components = null;
         private System.Windows.Forms.SplitContainer splitContainer;
@@ -130,7 +130,6 @@
             this.previewBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.previewBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.splitContainer.Panel2.Controls.Add(this.previewBox);
-            top += 220;
 
             // Original File
             this.lblOriginalFile.Text = "Original File:";
@@ -140,7 +139,6 @@
             this.txtOriginalFile.Location = new System.Drawing.Point(10 + labelWidth + offsetX, top);
             this.txtOriginalFile.Width = 200;
             this.splitContainer.Panel2.Controls.Add(this.txtOriginalFile);
-            top += 30;
 
             // Layout Width
             this.lblLayoutWidth.Text = "Layout Width:";
@@ -150,7 +148,6 @@
             this.txtLayoutWidth.Location = new System.Drawing.Point(10 + labelWidth + offsetX, top);
             this.txtLayoutWidth.Width = 100;
             this.splitContainer.Panel2.Controls.Add(this.txtLayoutWidth);
-            top += 30;
 
             // Layout Height
             this.lblLayoutHeight.Text = "Layout Height:";
@@ -160,7 +157,6 @@
             this.txtLayoutHeight.Location = new System.Drawing.Point(10 + labelWidth + offsetX, top);
             this.txtLayoutHeight.Width = 100;
             this.splitContainer.Panel2.Controls.Add(this.txtLayoutHeight);
-            top += 30;
 
             // Copies
             this.lblCopies.Text = "Copies:";
@@ -170,7 +166,7 @@
             this.numCopies.Location = new System.Drawing.Point(10 + labelWidth + offsetX, top);
             this.numCopies.Width = 60;
             this.splitContainer.Panel2.Controls.Add(this.numCopies);
-            top += 30;
+
 
             // Comment
             this.lblComment.Text = "Comment:";
@@ -182,7 +178,7 @@
             this.txtComment.Height = 60;
             this.txtComment.Multiline = true;
             this.splitContainer.Panel2.Controls.Add(this.txtComment);
-            top += 70;
+
 
             // Step & Repeat
             this.lblStepRepeat.Text = "Step & Repeat:";
