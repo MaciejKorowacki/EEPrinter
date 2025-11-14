@@ -142,7 +142,6 @@
             this.txtOriginalFile.Location = new System.Drawing.Point(10 + labelWidth + offsetX, top);
             this.txtOriginalFile.Width = 200;
             this.splitContainer.Panel2.Controls.Add(this.txtOriginalFile);
-            top += 30;
 
             // Layout Width
             this.lblLayoutWidth.Text = "Layout Width:";
@@ -153,7 +152,6 @@
             this.txtLayoutWidth.Location = new System.Drawing.Point(10 + labelWidth + offsetX, top);
             this.txtLayoutWidth.Width = 100;
             this.splitContainer.Panel2.Controls.Add(this.txtLayoutWidth);
-            top += 30;
 
             // Layout Height
             this.lblLayoutHeight.Text = "Layout Height:";
@@ -164,7 +162,6 @@
             this.txtLayoutHeight.Location = new System.Drawing.Point(10 + labelWidth + offsetX, top);
             this.txtLayoutHeight.Width = 100;
             this.splitContainer.Panel2.Controls.Add(this.txtLayoutHeight);
-            top += 30;
 
             // Copies
             this.lblCopies.Text = "Copies:";
@@ -175,9 +172,7 @@
             this.numCopies.Location = new System.Drawing.Point(10 + labelWidth + offsetX, top);
             this.numCopies.Width = 60;
             this.splitContainer.Panel2.Controls.Add(this.numCopies);
-            top += 30;
 
-            // Comment
             this.lblComment.Text = "Comment:";
             this.lblComment.Location = new System.Drawing.Point(10, top);
             this.lblComment.Width = labelWidth;
@@ -188,7 +183,6 @@
             this.txtComment.Height = 60;
             this.txtComment.Multiline = true;
             this.splitContainer.Panel2.Controls.Add(this.txtComment);
-            top += 70;
 
             // Step & Repeat
             this.lblStepRepeat.Text = "Step & Repeat:";
